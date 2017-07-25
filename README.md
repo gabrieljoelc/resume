@@ -6,7 +6,7 @@ gabrieljoelc/resume: [ ![Codeship Status for gabrieljoelc/resume](https://app.co
 
 # Description
 
-This is my personal resume in FRESH format. I use [HackMyResume](https://github.com/hacksalot/HackMyResume) to generate output files from the YAML file(s).
+This is my personal resume in [FRESH](https://github.com/fresh-standard/FRESCA) format. I use [HackMyResume](https://github.com/hacksalot/HackMyResume) to generate output files from the YAML file(s).
 
 # Build
 
