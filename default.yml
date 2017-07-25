@@ -178,28 +178,30 @@ meta:
 name: Gabriel Chaney
 skills:
   sets:
-    - 
+    -
       level: intermediate
       name: Leadership
-      skills: 
+      skills:
         - Team formation
         - Mentoring
-    - 
+        - Scrum
+    -
       level: advanced
       name: Web
-      skills: 
+      skills:
         - Ruby on Rails
         - Angular.js
         - ASP.NET MVC
-        - HTML
-    - 
+        - HTML/CSS
+    -
       level: advanced
       name: Backend
-      skills: 
-        - Distributed architecture
+      skills:
+        - Distributed systems architecture
         - Microservices
-        - Publish / subscribe
+        - Publish/subscribe
         - RabbitMQ
+        - Redis
         - Ruby
 social: 
   - 
