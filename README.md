@@ -28,7 +28,7 @@ open out/index.html
 - [ ] Support PDF output
 - [ ] Update [LinkedIn](https://www.linkedin.com/in/gabrielchaney/) through build
 - [ ] Update [Stack Overflow Developer Story](https://stackoverflow.com/users/story/34315) through build
-- [ ] Update[Standard Resume](https://standardresume.co/gabrielchaney) through build
+- [ ] Update [Standard Resume](https://standardresume.co/gabrielchaney) through build
 - [ ] Include Codeship status in site
 - [ ] Include this repo in site
 - [ ] Open PR for [HackMyResume](https://github.com/hacksalot/HackMyResume) to accept YAML input instead of just JSON
