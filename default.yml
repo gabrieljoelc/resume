@@ -205,16 +205,16 @@ skills:
         - Ruby
 social: 
   - 
-    label: GitHub
+    label: github
     network: GitHub
     url: https://github.com/gabrieljoelc
     user: gabrieljoelc
   - 
-    label: LinkedIn
+    label: linkedin
     network: LinkedIn
-    url: www.linkedin.com/in/gabrielchaney
+    url: https://www.linkedin.com/in/gabrielchaney
   - 
-    label: Twitter
+    label: twitter
     network: Twitter
-    url: "https://twitter.com/gabrieljoelc"
+    url: https://twitter.com/gabrieljoelc
     user: gabrieljoelc
