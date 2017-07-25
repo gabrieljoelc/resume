@@ -1,3 +1,7 @@
+Codeship Status for gabrieljoelc/resume: [ ![Codeship Status for gabrieljoelc/resume](https://app.codeship.com/projects/bdde7d00-5339-0135-6a9a-3e11013d5227/status?branch=master)](https://app.codeship.com/projects/234886)
+
+Codeship Status for gabrieljoelc/fresh-themes: [ ![Codeship Status for gabrieljoelc/fresh-themes](https://app.codeship.com/projects/acdce700-5346-0135-125a-62c2a1758ec6/status?branch=master)](https://app.codeship.com/projects/234906)
+
 This is my personal resume in FRESH format. I use [HackMyResume](https://github.com/hacksalot/HackMyResume) to generate output files from the YAML file(s).
 
 Generate output using these commands:
