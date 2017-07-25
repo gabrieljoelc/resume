@@ -31,3 +31,4 @@ open out/index.html
 - [ ] Update[Standard Resume](https://standardresume.co/gabrielchaney) through build
 - [ ] Include Codeship status in site
 - [ ] Include this repo in site
+- [ ] Open PR for [HackMyResume](https://github.com/hacksalot/HackMyResume) to accept YAML input instead of just JSON
