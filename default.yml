@@ -110,7 +110,7 @@ employment:
       position: Software Engineer
       start: 2011-02
       end: 2013-06
-      summary: I joined a newly forming team to upgrade this not-for-profit's legacy .NET applications to next-gen .NET applications. This is where I was introduced to methodologies like Scrum, Domain-Driven Design and distributed systems design. I took classes from Eric Evans (Domain-Driven Design author) and Udi Dahan (NServiceBus author).
+      summary: I joined a newly formed team to upgrade this not-for-profit's legacy .NET applications to next-gen .NET applications. This is where I was introduced to methodologies like Scrum, Domain-Driven Design and distributed systems design. I took classes from Eric Evans (Domain-Driven Design author) and Udi Dahan (NServiceBus author).
       url: https://www.ncarb.org/
       highlights:
         - Built JavaScript and CSS infrastructure for the new flagship web application
