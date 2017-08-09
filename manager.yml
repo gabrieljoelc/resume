@@ -24,6 +24,7 @@ employment:
         - Played a pivotal role in doubling the total team size in the first year of acquisition
         - Designed and shipped an alpha and private beta of a new mobile product
         - Created plan to deliver first Phoenix/Elixir API and drove plan to completion
+        - Organized the team to decide on tech for a mobile app which resulted in a working prototype of a React Native Android app in a week
         - Counseled a lead engineer through rallying a team to tackle some significant scaling issues
         - Guided team through acquisition changes
       keywords:
@@ -50,7 +51,7 @@ employment:
       summary: This was a transitional post-acquisition position as the company calibrated to the existing team and the business direction.
       highlights:
         - Organized engineering group into 3 teams
-        - Lead teams to adopt Scrum with great success
+        - Led teams to adopt Scrum with great success
         - Delivered initial UI that denoted acquisition
         - Worked with teams in Austin to develop initial post-acquisition roadmap
       keywords:
@@ -76,7 +77,7 @@ employment:
         - Shepherded architecture from monoliths towards microservices
         - Drove use of pub/sub including initiating an in-house developed open source project foundational in our architecture
         - Helped develop a scaleable interview process to build the core team        
-        - Developed and presented technical documentation for RetailMeNot acquisition due-diligence team
+        - Developed and presented technical documentation for the RetailMeNot acquisition due-diligence team including their CTO
       keywords:
         - Ruby on Rails
         - Angular.js
@@ -94,7 +95,7 @@ employment:
       position: Software Engineer
       start: 2014-04
       end: 2013-06
-      summary: I helped a new consulting firm build and improve software for their clients. I played a key role in answering one client's performance questions about their SaaS web application as well as contributed to web and mobile applications. This was a remote position that also included visiting client sites.
+      summary: I helped a new consulting firm build and improve software for their clients. I played a key role in answering client performance questions about their SaaS web application as well as contributed to web and mobile applications. This was a remote position that also included visiting client sites.
       highlights:
         - Built a heavliy customized load test suite for testing a multi-tenant app
         - Presented performance analysis and recommendations to the client VP and leads
@@ -109,7 +110,7 @@ employment:
       position: Software Engineer
       start: 2011-02
       end: 2013-06
-      summary: I joined a newly forming team to upgrade this not-for-profit's legacy .NET applications to next-gen .NET applications. This is where I was introduced to methodologies like Scrum, Domain-Driven Design and distributed systems design. I took classes from Eric Evans (Domain-Driven Design author) and Udi Dahan (NServiceBus author).
+      summary: I joined a newly formed team to upgrade this not-for-profit's legacy .NET applications to next-gen .NET applications. This is where I was introduced to methodologies like Scrum, Domain-Driven Design and distributed systems design. I took classes from Eric Evans (Domain-Driven Design author) and Udi Dahan (NServiceBus author).
       url: https://www.ncarb.org/
       highlights:
         - Built JavaScript and CSS infrastructure for the new flagship web application
@@ -134,7 +135,7 @@ employment:
       summary: I delivered my first production applications that included object-oriented designs, jQuery, ORM, and HTTP API calls.
       highlights:
         - Championed jQuery to the team to meet a customer request for web UI performance improvements
-        - Added client web service requests to external systems which decreased HR analyst processing time from three weeks to less than two weeks
+        - Added client web service requests to external systems which decreased HR analyst processing time from three weeks to just over one week
         - Drove changes to replace the use of stored procedures with ORM
         - Integrated with a Netconf API to configure Cisco routers
       keywords:
@@ -154,7 +155,7 @@ employment:
       end: 1999-03
       summary: This is where I built my first web application while I was working on my CS degree (awww). I introduced myself to CSS, HTML, PHP, and MVC through this creative process. I had so much fun learning and building.
       highlights:
-        - Set-up local are network and point-of-sale system
+        - Set-up local area network and point-of-sale system
         - Built store website including a custom content management system increasing piano sales by 48%
         - Sold guitars
       keywords:
@@ -167,7 +168,7 @@ info:
   brief: "Technology is a tool to connect the humans building it (development teams) with the humans using it
 (users/customers). I love to help, lead, and build in that space."
   characterClass: Programmer
-  label: Manager, Software Engineering
+  label: Software Engineer & Leader
 location: 
   city: Phoenix
   country: US
