@@ -95,7 +95,7 @@ employment:
       position: Software Engineer
       start: 2014-04
       end: 2013-06
-      summary: I helped a new consulting firm build and improve software for their clients. I played a key role in answering one client's performance questions about their SaaS web application as well as contributed to web and mobile applications. This was a remote position that also included visiting client sites.
+      summary: I helped a new consulting firm build and improve software for their clients. I played a key role in answering client performance questions about their SaaS web application as well as contributed to web and mobile applications. This was a remote position that also included visiting client sites.
       highlights:
         - Built a heavliy customized load test suite for testing a multi-tenant app
         - Presented performance analysis and recommendations to the client VP and leads
