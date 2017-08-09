@@ -135,7 +135,7 @@ employment:
       summary: I delivered my first production applications that included object-oriented designs, jQuery, ORM, and HTTP API calls.
       highlights:
         - Championed jQuery to the team to meet a customer request for web UI performance improvements
-        - Added client web service requests to external systems which decreased HR analyst processing time from three weeks to less than two weeks
+        - Added client web service requests to external systems which decreased HR analyst processing time from three weeks to just over one week
         - Drove changes to replace the use of stored procedures with ORM
         - Integrated with a Netconf API to configure Cisco routers
       keywords:
