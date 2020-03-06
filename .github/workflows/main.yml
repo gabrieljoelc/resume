@@ -21,13 +21,15 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
+      with:
+        repository: 'gabrieljoelc/fresh-themes'
     - uses: sjdonado/heroku@master
     - uses: actions/setup-ruby@v1.0.0
     - name: Build and deploy resume to Heroku
       run: |
         ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < default.yml > default.json
         echo test, and deploy your project.
-        git clone git@github.com:gabrieljoelc/fresh-themes.git
         npm install hackmyresume -g
         hackmyresume BUILD default.json TO out/index.html -t fresh-themes/themes/jae
         # fake Heroku out to run static website http://blog.teamtreehouse.com/deploy-static-site-heroku
