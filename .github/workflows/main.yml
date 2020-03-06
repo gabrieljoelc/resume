@@ -27,9 +27,9 @@ jobs:
         path: fresh-themes
     - uses: sjdonado/heroku@master
     - uses: actions/setup-ruby@v1.0.0
-    - run: npm install hackmyresume
     - name: Build and deploy resume to Heroku
       run: |
+        npm install hackmyresume
         ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < default.yml > default.json
         echo test, and deploy your project.
         hackmyresume BUILD default.json TO out/index.html -t fresh-themes/themes/jae
