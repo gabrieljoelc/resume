@@ -26,7 +26,7 @@ jobs:
         repository: 'gabrieljoelc/fresh-themes'
     - uses: sjdonado/heroku@master
     - uses: actions/setup-ruby@v1.0.0
-    - run: npm install hackmyresume -g
+    - run: npm install hackmyresume
     - name: Build and deploy resume to Heroku
       working-directory: ./
       run: |
