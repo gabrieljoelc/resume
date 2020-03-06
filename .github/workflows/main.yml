@@ -21,7 +21,7 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    - uses: actions/heroku@1.0.0
+    - uses: sjdonado/heroku@master
     - uses: actions/setup-ruby@v1.0.0
     - name: Build and deploy resume to Heroku
       run: |
