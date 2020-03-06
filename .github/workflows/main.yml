@@ -29,8 +29,4 @@ jobs:
     - run: npm install hackmyresume
     - name: test0
       run: |
-        ls -R
-    - name: test1
-      working-directory: ./
-      run: |
-        ls -R
+        ls
