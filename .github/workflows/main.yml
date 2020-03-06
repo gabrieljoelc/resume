@@ -29,9 +29,10 @@ jobs:
     - run: npm install hackmyresume
     - name: Build and deploy resume to Heroku
       run: |
+        ls node_modules/hackmyresume
         ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < default.yml > default.json
         echo test, and deploy your project.
-        node_modules/hackmyresume BUILD default.json TO out/index.html -t fresh-themes/themes/jae
+        ./node_modules/hackmyresume BUILD default.json TO out/index.html -t fresh-themes/themes/jae
         # fake Heroku out to run static website http://blog.teamtreehouse.com/deploy-static-site-heroku
         echo "<?php header( 'Location: /index.html' ) ;  ?>" > out/index.php
         cd out
