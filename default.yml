@@ -15,6 +15,29 @@ education:
 employment: 
   history:
     - 
+      employer: Philips
+      url: https://www.usa.philips.com/
+      position: Senior Software Engineer
+      start: 2020-present
+      highlights:
+        - Guiding team through updating our legacy systems to scale with increased number of patients
+        - Exploring Kubernetes as a way to loosen coupling on our cloud infrastructure
+    - 
+      employer: Medumo
+      url: https://www.medumo.com/
+      position: Senior Software Engineer
+      start: 2018-2019
+      summary: Acquired by Philips in May 2019.
+      highlights:
+        - Driving microservice development across the team through patterns and technology from message bus for communication to Terraform modules for re-useable infrastructure creation
+        - Leveling-up gaps in process from branching strategies (e.g. gitflow) to documentation (e.g. repo readme's, plantUML) to improved CI/CD definitions (e.g. pipeline yaml over UI)
+        - Mentoring an amazing group of newer engineers using tools from paired programming to code reviews to a weekly Design Day meeting
+    - 
+      employer: HomeLight
+      url: https://www.homelight.com/
+      position: Software Engineer
+      start: 2018
+    - 
       employer: RetailMeNot
       url: https://retailmenot.com
       position: Engineering Manager
