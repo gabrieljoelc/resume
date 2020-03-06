@@ -27,20 +27,10 @@ jobs:
     - uses: sjdonado/heroku@master
     - uses: actions/setup-ruby@v1.0.0
     - run: npm install hackmyresume
-    - name: Build and deploy resume to Heroku
+    - name: test0
+      run: |
+        ls -R
+    - name: test1
       working-directory: ./
       run: |
-        ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < default.yml > default.json
-        echo test, and deploy your project.
-        hackmyresume BUILD default.json TO out/index.html -t fresh-themes/themes/jae
-        # fake Heroku out to run static website http://blog.teamtreehouse.com/deploy-static-site-heroku
-        echo "<?php header( 'Location: /index.html' ) ;  ?>" > out/index.php
-        cd out
-        git init
-        git config --global user.email "gabriel.chaney@gmail.com"
-        git config --global user.name "Gabriel Chaney"
-        git add .
-        git commit -m "Prepare Heroku deployment"
-        heroku git:remote -agabrielchaney-static-site -r heroku_gabrielchaney-static-site --ssh-git
-        git push heroku_gabrielchaney-static-site refs/heads/master -f
-        curl http://www.gabrielchaney.com/ --retry 3
+        ls -R
