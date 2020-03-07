@@ -26,21 +26,28 @@ jobs:
         repository: gabrieljoelc/fresh-themes
         path: fresh-themes
     - uses: sjdonado/heroku@master
+    - uses: mikeal/npx@1.0.0
     - run: npm install hackmyresume
-    - name: Build and deploy resume to Heroku
-      run: |
-        ls node_modules/hackmyresume
-        ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < default.yml > default.json
+    - name: Generate FRESH JSON from YAML
+      run: ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < default.yml > default.json
         echo test, and deploy your project.
-        ./node_modules/hackmyresume BUILD default.json TO out/index.html -t fresh-themes/themes/jae
+    - name: Generate FRESH HTML from JSON using fresh-themes
+      working-directory: node_modules/hackmyresume
+      run: npx hackmyresume BUILD default.json TO out/index.html -t fresh-themes/themes/jae
+    - name: Prepare Heroku static site
+      working-directory: out
+      run: |
         # fake Heroku out to run static website http://blog.teamtreehouse.com/deploy-static-site-heroku
-        echo "<?php header( 'Location: /index.html' ) ;  ?>" > out/index.php
-        cd out
+        echo "<?php header( 'Location: /index.html' ) ;  ?>" > index.php
         git init
         git config --global user.email "gabriel.chaney@gmail.com"
         git config --global user.name "Gabriel Chaney"
         git add .
         git commit -m "Prepare Heroku deployment"
+    - name: Deploy to Heroku
+      working-directory: out
+      run: |
         heroku git:remote -agabrielchaney-static-site -r heroku_gabrielchaney-static-site --ssh-git
         git push heroku_gabrielchaney-static-site refs/heads/master -f
-        curl http://www.gabrielchaney.com/ --retry 3
+    - name: Check that website responds
+      run: curl http://www.gabrielchaney.com/ --retry 3
