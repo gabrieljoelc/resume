@@ -14,7 +14,7 @@ on:
 jobs:
   build:
     env:
-      OUTPUT_DIR: out
+      OUTPUT_DIR: $GITHUB_WORKSPACE/out
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -37,6 +37,7 @@ jobs:
         ls -al
         npx hackmyresume BUILD default.json TO $OUTPUT_DIR/index.html -t fresh-themes/themes/jae
     - name: Prepare Heroku static site
+      working-directory: $OUTPUT_DIR
       run: |
         ls -al
         # fake Heroku out to run static website http://blog.teamtreehouse.com/deploy-static-site-heroku
@@ -47,6 +48,7 @@ jobs:
         git add .
         git commit -m "Prepare Heroku deployment"
     - name: Deploy to Heroku
+      working-directory: $OUTPUT_DIR
       run: |
         ls -al
         heroku git:remote -agabrielchaney-static-site -r heroku_gabrielchaney-static-site --ssh-git
