@@ -34,7 +34,7 @@ jobs:
       working-directory: node_modules/hackmyresume
       run: npx hackmyresume BUILD $GITHUB_WORKSPACE/default.json TO $GITHUB_WORKSPACE/out/index.html -t $GITHUB_WORKSPACE/fresh-themes/themes/jae
     - name: Prepare Heroku static site
-      working-directory: out
+      working-directory: $GITHUB_WORKSPACE/out
       run: |
         ls -al
         # fake Heroku out to run static website http://blog.teamtreehouse.com/deploy-static-site-heroku
