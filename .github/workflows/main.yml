@@ -32,9 +32,7 @@ jobs:
       run: ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < default.yml > default.json
     - name: Generate FRESH HTML from JSON using fresh-themes
       working-directory: node_modules/hackmyresume
-      run: |
-        ls -al $GITHUB_WORKSPACE
-        npx hackmyresume BUILD default.json TO $GITHUB_WORKSPACE/out/index.html -t $GITHUB_WORKSPACE/fresh-themes/themes/jae
+      run: npx hackmyresume BUILD $GITHUB_WORKSPACE/default.json TO $GITHUB_WORKSPACE/out/index.html -t $GITHUB_WORKSPACE/fresh-themes/themes/jae
     - name: Prepare Heroku static site
       working-directory: out
       run: |
