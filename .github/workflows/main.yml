@@ -36,6 +36,7 @@ jobs:
     - name: Prepare Heroku static site
       working-directory: out
       run: |
+        ls -al
         # fake Heroku out to run static website http://blog.teamtreehouse.com/deploy-static-site-heroku
         echo "<?php header( 'Location: /index.html' ) ;  ?>" > index.php
         git init
