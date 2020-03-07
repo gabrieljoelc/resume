@@ -33,11 +33,10 @@ jobs:
     - name: Generate FRESH HTML from JSON using fresh-themes
       run: |
         ls -al
-        mkdir $GITHUB_WORKSPACE/$OUTPUT_DIR
+        mkdir $OUTPUT_DIR
         ls -al
-        npx hackmyresume BUILD default.json TO $GITHUB_WORKSPACE/$OUTPUT_DIR/index.html -t fresh-themes/themes/jae
+        npx hackmyresume BUILD default.json TO $OUTPUT_DIR/index.html -t fresh-themes/themes/jae
     - name: Prepare Heroku static site
-      working-directory: $GITHUB_WORKSPACE/$OUTPUT_DIR
       run: |
         ls -al
         # fake Heroku out to run static website http://blog.teamtreehouse.com/deploy-static-site-heroku
@@ -48,7 +47,6 @@ jobs:
         git add .
         git commit -m "Prepare Heroku deployment"
     - name: Deploy to Heroku
-      working-directory: $GITHUB_WORKSPACE/$OUTPUT_DIR
       run: |
         ls -al
         heroku git:remote -agabrielchaney-static-site -r heroku_gabrielchaney-static-site --ssh-git
