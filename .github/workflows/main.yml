@@ -31,6 +31,7 @@ jobs:
       run: ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < default.yml > default.json
     - name: Generate FRESH HTML from JSON using fresh-themes & Prepare Heroku static site
       run: |
+        mkdir out
         npx hackmyresume BUILD default.json TO out/index.html -t fresh-themes/themes/jae
         ls -al
         cd out
