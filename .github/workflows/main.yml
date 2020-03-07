@@ -12,8 +12,9 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
+    env:
+      OUTPUT_DIR: out
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -29,12 +30,16 @@ jobs:
     - uses: mikeal/npx@1.0.0
     - name: Generate FRESH JSON from YAML
       run: ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < default.yml > default.json
-    - name: Generate FRESH HTML from JSON using fresh-themes & Prepare Heroku static site
+    - name: Generate FRESH HTML from JSON using fresh-themes
       run: |
-        mkdir out
-        npx hackmyresume BUILD default.json TO out/index.html -t fresh-themes/themes/jae
         ls -al
-        cd out
+        mkdir $OUTPUT_DIR
+        ls -al
+        npx hackmyresume BUILD default.json TO $OUTPUT_DIR/index.html -t fresh-themes/themes/jae
+    - name: Prepare Heroku static site
+      working-directory: $OUTPUT_DIR
+      run: |
+        ls -al
         # fake Heroku out to run static website http://blog.teamtreehouse.com/deploy-static-site-heroku
         echo "<?php header( 'Location: /index.html' ) ;  ?>" > index.php
         git init
@@ -43,8 +48,9 @@ jobs:
         git add .
         git commit -m "Prepare Heroku deployment"
     - name: Deploy to Heroku
-      working-directory: out
+      working-directory: $OUTPUT_DIR
       run: |
+        ls -al
         heroku git:remote -agabrielchaney-static-site -r heroku_gabrielchaney-static-site --ssh-git
         git push heroku_gabrielchaney-static-site refs/heads/master -f
     - name: Check that website responds
