@@ -27,14 +27,12 @@ jobs:
         path: fresh-themes
     - uses: sjdonado/heroku@master
     - uses: mikeal/npx@1.0.0
-    - run: npm install hackmyresume
     - name: Generate FRESH JSON from YAML
       run: ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < default.yml > default.json
     - name: Generate FRESH HTML from JSON using fresh-themes
-      working-directory: node_modules/hackmyresume
-      run: npx hackmyresume BUILD $GITHUB_WORKSPACE/default.json TO $GITHUB_WORKSPACE/out/index.html -t $GITHUB_WORKSPACE/fresh-themes/themes/jae
+      run: npx hackmyresume BUILD default.json TO out/index.html -t fresh-themes/themes/jae
     - name: Prepare Heroku static site
-      working-directory: $GITHUB_WORKSPACE/out
+      working-directory: out
       run: |
         ls -al
         # fake Heroku out to run static website http://blog.teamtreehouse.com/deploy-static-site-heroku
