@@ -29,10 +29,9 @@ jobs:
     - uses: mikeal/npx@1.0.0
     - name: Generate FRESH JSON from YAML
       run: ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < default.yml > default.json
-    - name: Generate FRESH HTML from JSON using fresh-themes
-      run: npx hackmyresume BUILD default.json TO out/index.html -t fresh-themes/themes/jae
-    - name: Prepare Heroku static site
+    - name: Generate FRESH HTML from JSON using fresh-themes & Prepare Heroku static site
       run: |
+        npx hackmyresume BUILD default.json TO out/index.html -t fresh-themes/themes/jae
         ls -al
         cd out
         # fake Heroku out to run static website http://blog.teamtreehouse.com/deploy-static-site-heroku
