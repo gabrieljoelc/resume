@@ -51,10 +51,9 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: herokuStaticSite
-        path: $OUTPUT_DIR
+        path: out/*
   deployCedar14:
     env:
-      OUTPUT_DIR: out
       SITE_DOMAIN: http://www.gabrielchaney.com/
     needs: build
     runs-on: ubuntu-latest
@@ -92,8 +91,6 @@ jobs:
     - name: Check that website responds
       run: curl $SITE_DOMAIN --retry 3
   createCedar18:
-    env:
-      OUTPUT_DIR: out
     needs: build
     runs-on: ubuntu-latest
     steps:
