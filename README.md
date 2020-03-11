@@ -1,5 +1,3 @@
-# Codeship Statuses
-
 gabrieljoelc/resume: ![CI](https://github.com/gabrieljoelc/resume/workflows/CI/badge.svg)
 
 # Description
