@@ -117,7 +117,7 @@ jobs:
       working-directory: herokuStaticSite
       run: |
         ls -al
-        heroku create --stack heroku-18 $HEROKU_APP-h18
+        heroku git:remote --app $HEROKU_APP-h18
       env:
         HEROKU_APP: ${{ secrets.HEROKU_APP }}
     - name: Git push to Heroku
