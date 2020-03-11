@@ -38,7 +38,7 @@ jobs:
         npx hackmyresume BUILD default.json TO $OUTPUT_DIR/index.html -t fresh-themes/themes/jae
     - name: Prepare Heroku static site
       run: |
-        cd out
+        cd $OUTPUT_DIR
         ls -al
         # fake Heroku out to run static website http://blog.teamtreehouse.com/deploy-static-site-heroku
         echo "<?php header( 'Location: /index.html' ) ;  ?>" > index.php
@@ -49,8 +49,9 @@ jobs:
         git commit -m "Prepare Heroku deployment"
     - name: Deploy to Heroku
       run: |
+        cd $OUTPUT_DIR
         ls -al
-        cd out
+        heroku login
         heroku git:remote -agabrielchaney-static-site -r heroku_gabrielchaney-static-site --ssh-git
         git push heroku_gabrielchaney-static-site refs/heads/master -f
     - name: Check that website responds
