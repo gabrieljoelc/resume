@@ -47,6 +47,11 @@ jobs:
         git config --global user.name "Gabriel Chaney"
         git add .
         git commit -m "Prepare Heroku deployment"
+    - name: Upload Heroku static site repo to artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: herokuStaticSite
+        path: $OUTPUT_DIR
   deployCedar14:
     env:
       OUTPUT_DIR: out
@@ -55,6 +60,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: sjdonado/heroku@master
+    - name: Heroku static site repo from artifact
+      uses: actions/download-artifact@v1
+      with:
+        name: herokuStaticSite
     - name: Create .netrc for Heroku login
       run: |+
         cat >~/.netrc <<EOF
@@ -69,15 +78,15 @@ jobs:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         HEROKU_EMAIL: ${{ secrets.HEROKU_EMAIL }}
     - name: Add Heroku remote to temp repo
+      working-directory: herokuStaticSite
       run: |
-        cd $OUTPUT_DIR
         ls -al
         heroku git:remote --app $HEROKU_APP
       env:
         HEROKU_APP: ${{ secrets.HEROKU_APP }}
     - name: Git push to Heroku
+      working-directory: herokuStaticSite
       run: |
-        cd $OUTPUT_DIR
         ls -al
         git push heroku refs/heads/master -f
     - name: Check that website responds
@@ -89,6 +98,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: sjdonado/heroku@master
+    - name: Heroku static site repo from artifact
+      uses: actions/download-artifact@v1
+      with:
+        name: herokuStaticSite
     - name: Create .netrc for Heroku login
       run: |+
         cat >~/.netrc <<EOF
@@ -103,14 +116,14 @@ jobs:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         HEROKU_EMAIL: ${{ secrets.HEROKU_EMAIL }}
     - name: Add Heroku remote to temp repo
+      working-directory: herokuStaticSite
       run: |
-        cd $OUTPUT_DIR
         ls -al
         heroku create --remote heroku-18 --stack heroku-18 $HEROKU_APP-heroku-18
       env:
         HEROKU_APP: ${{ secrets.HEROKU_APP }}
     - name: Git push to Heroku
+      working-directory: herokuStaticSite
       run: |
-        cd $OUTPUT_DIR
         ls -al
         git push heroku refs/heads/master -f
