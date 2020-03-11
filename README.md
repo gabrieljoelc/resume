@@ -1,6 +1,6 @@
 # Codeship Statuses
 
-gabrieljoelc/resume: [ ![Codeship Status for gabrieljoelc/resume](https://app.codeship.com/projects/bdde7d00-5339-0135-6a9a-3e11013d5227/status?branch=master)](https://app.codeship.com/projects/234886)
+gabrieljoelc/resume: ![CI](https://github.com/gabrieljoelc/resume/workflows/CI/badge.svg)
 
 [gabrieljoelc/fresh-themes](https://github.com/gabrieljoelc/fresh-themes): [ ![Codeship Status for gabrieljoelc/fresh-themes](https://app.codeship.com/projects/acdce700-5346-0135-125a-62c2a1758ec6/status?branch=master)](https://app.codeship.com/projects/234906)
 
