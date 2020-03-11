@@ -2,11 +2,9 @@
 
 gabrieljoelc/resume: ![CI](https://github.com/gabrieljoelc/resume/workflows/CI/badge.svg)
 
-[gabrieljoelc/fresh-themes](https://github.com/gabrieljoelc/fresh-themes): [ ![Codeship Status for gabrieljoelc/fresh-themes](https://app.codeship.com/projects/acdce700-5346-0135-125a-62c2a1758ec6/status?branch=master)](https://app.codeship.com/projects/234906)
-
 # Description
 
-This is my personal resume in [FRESH](https://github.com/fresh-standard/FRESCA) format. I use [HackMyResume](https://github.com/hacksalot/HackMyResume) to generate output files from the YAML file(s).
+This is my personal resume in [FRESH](https://github.com/fresh-standard/FRESCA) format. I use [HackMyResume](https://github.com/hacksalot/HackMyResume) to generate output files from the YAML file(s). I use a forkk of [fresh-themes](https://github.com/gabrieljoelc/fresh-themes) for the styles.
 
 # Build
 
@@ -29,6 +27,6 @@ open out/index.html
 - [ ] Update [LinkedIn](https://www.linkedin.com/in/gabrielchaney/) through build
 - [ ] Update [Stack Overflow Developer Story](https://stackoverflow.com/users/story/34315) through build
 - [ ] Update [Standard Resume](https://standardresume.co/gabrielchaney) through build
-- [ ] Include Codeship status in site
-- [ ] Include this repo in site
+- [x] ~~Include Codeship status in site~~ Move build to GitHub Actions
+- [x] Include this repo in site (see this [commit](https://github.com/gabrieljoelc/fresh-themes/commit/0f4c0f71e409f2a70b43d72881a1f4eebd9723fa))
 - [ ] Open PR for [HackMyResume](https://github.com/hacksalot/HackMyResume) to accept YAML input instead of just JSON
