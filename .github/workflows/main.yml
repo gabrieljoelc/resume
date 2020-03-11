@@ -4,25 +4,27 @@ name: CI
 
 # Controls when the action will run. Triggers the workflow on push or pull request 
 # events but only for the master branch
+env:
+  OUTPUT_DIR: dist
+  SRC_DIR: src
+  ARTIFACT_NAME: herokuStaticSite
+
 on:
   push:
     branches: [ master ]
     paths:
       - '.github/*'
-      - 'src/*'
+      - '${{ env.SRC_DIR }}/*'
   pull_request:
     branches:
       - 'ci-update/**'
     paths:
       - '.github/*'
-      - 'src/*'
+      - '${{ env.SRC_DIR }}/*'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
-    env:
-      OUTPUT_DIR: out
-      SITE_DOMAIN: http://www.gabrielchaney.com/
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -54,8 +56,8 @@ jobs:
     - name: Upload Heroku static site repo to artifact
       uses: actions/upload-artifact@v1
       with:
-        name: herokuStaticSite
-        path: out
+        name: ${{ env.ARTIFACT_NAME }}
+        path: ${{ env.OUTPUT_DIR }}
   deployHeroku:
     env:
       SITE_DOMAIN: http://www.gabrielchaney.com/
@@ -66,7 +68,7 @@ jobs:
     - name: Heroku static site repo from artifact
       uses: actions/download-artifact@v1
       with:
-        name: herokuStaticSite
+        name: ${{ env.ARTIFACT_NAME }}
     - name: Create .netrc for Heroku login
       run: |+
         cat >~/.netrc <<EOF
@@ -81,13 +83,13 @@ jobs:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         HEROKU_EMAIL: ${{ secrets.HEROKU_EMAIL }}
     - name: Add Heroku remote to temp repo
-      working-directory: herokuStaticSite
+      working-directory: ${{ env.ARTIFACT_NAME }}
       run: |
         heroku git:remote --app $HEROKU_APP
       env:
         HEROKU_APP: ${{ secrets.HEROKU_APP }}
     - name: Git push to Heroku
-      working-directory: herokuStaticSite
+      working-directory: ${{ env.ARTIFACT_NAME }}
       run: |
         git push heroku refs/heads/master -f
     - name: Check that website responds
