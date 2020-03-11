@@ -38,14 +38,14 @@ jobs:
         path: fresh-themes
     - uses: mikeal/npx@1.0.0
     - name: Generate FRESH JSON from YAML
-      run: ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < default.yml > default.json
+      working_directory: ${{ env.SRC_DIR }}
+      run: ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < default.yml > $HOME/default.json
     - name: Generate FRESH HTML from JSON using fresh-themes
-      run: |
-        mkdir $OUTPUT_DIR
-        npx hackmyresume BUILD default.json TO $OUTPUT_DIR/index.html -t fresh-themes/themes/jae
+      working_directory: ${{ env.HOME }}
+      run: npx hackmyresume BUILD default.json TO $OUTPUT_DIR/index.html -t fresh-themes/themes/jae
     - name: Prepare Heroku static site
+      working_directory: ${{ env.OUTPUT_DIR }}
       run: |
-        cd $OUTPUT_DIR
         # fake Heroku out to run static website http://blog.teamtreehouse.com/deploy-static-site-heroku
         echo "<?php header( 'Location: /index.html' ) ;  ?>" > index.php
         git init
