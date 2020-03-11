@@ -12,15 +12,9 @@ env:
 on:
   push:
     branches: [ master ]
-    paths:
-      - '.github/*'
-      - '${{ env.SRC_DIR }}/*'
   pull_request:
     branches:
-      - 'ci-update/**'
-    paths:
-      - '.github/*'
-      - '${{ env.SRC_DIR }}/*'
+      - ci-update/**
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
