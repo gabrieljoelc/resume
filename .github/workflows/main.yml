@@ -47,11 +47,12 @@ jobs:
         git config --global user.name "Gabriel Chaney"
         git add .
         git commit -m "Prepare Heroku deployment"
+        ls -al
     - name: Upload Heroku static site repo to artifact
       uses: actions/upload-artifact@v1
       with:
         name: herokuStaticSite
-        path: out/*
+        path: out
   deployCedar14:
     env:
       SITE_DOMAIN: http://www.gabrielchaney.com/
