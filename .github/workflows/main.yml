@@ -48,6 +48,13 @@ jobs:
         git config --global user.name "Gabriel Chaney"
         git add .
         git commit -m "Prepare Heroku deployment"
+  deployCedar14:
+    env:
+      OUTPUT_DIR: out
+      SITE_DOMAIN: http://www.gabrielchaney.com/
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
     - name: Create .netrc for Heroku login
       run: |+
         cat >~/.netrc <<EOF
@@ -75,3 +82,34 @@ jobs:
         git push heroku refs/heads/master -f
     - name: Check that website responds
       run: curl $SITE_DOMAIN --retry 3
+  createCedar18:
+    env:
+      OUTPUT_DIR: out
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Create .netrc for Heroku login
+      run: |+
+        cat >~/.netrc <<EOF
+        machine api.heroku.com
+            login $HEROKU_EMAIL
+            password $HEROKU_API_KEY
+        machine git.heroku.com
+            login $HEROKU_EMAIL
+            password $HEROKU_API_KEY
+        EOF
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        HEROKU_EMAIL: ${{ secrets.HEROKU_EMAIL }}
+    - name: Add Heroku remote to temp repo
+      run: |
+        cd $OUTPUT_DIR
+        ls -al
+        heroku create --remote heroku-18 --stack heroku-18 $HEROKU_APP-heroku-18
+      env:
+        HEROKU_APP: ${{ secrets.HEROKU_APP }}
+    - name: Git push to Heroku
+      run: |
+        cd $OUTPUT_DIR
+        ls -al
+        git push heroku refs/heads/master -f
