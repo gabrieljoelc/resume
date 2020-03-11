@@ -32,14 +32,11 @@ jobs:
       run: ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < default.yml > default.json
     - name: Generate FRESH HTML from JSON using fresh-themes
       run: |
-        ls -al
         mkdir $OUTPUT_DIR
-        ls -al
         npx hackmyresume BUILD default.json TO $OUTPUT_DIR/index.html -t fresh-themes/themes/jae
     - name: Prepare Heroku static site
       run: |
         cd $OUTPUT_DIR
-        ls -al
         # fake Heroku out to run static website http://blog.teamtreehouse.com/deploy-static-site-heroku
         echo "<?php header( 'Location: /index.html' ) ;  ?>" > index.php
         git init
@@ -47,13 +44,12 @@ jobs:
         git config --global user.name "Gabriel Chaney"
         git add .
         git commit -m "Prepare Heroku deployment"
-        ls -al
     - name: Upload Heroku static site repo to artifact
       uses: actions/upload-artifact@v1
       with:
         name: herokuStaticSite
         path: out
-  deployCedar14:
+  deployHeroku:
     env:
       SITE_DOMAIN: http://www.gabrielchaney.com/
     needs: build
@@ -80,48 +76,12 @@ jobs:
     - name: Add Heroku remote to temp repo
       working-directory: herokuStaticSite
       run: |
-        ls -al
         heroku git:remote --app $HEROKU_APP
       env:
         HEROKU_APP: ${{ secrets.HEROKU_APP }}
     - name: Git push to Heroku
       working-directory: herokuStaticSite
       run: |
-        ls -al
         git push heroku refs/heads/master -f
     - name: Check that website responds
       run: curl $SITE_DOMAIN --retry 3
-  createCedar18:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-    - uses: sjdonado/heroku@master
-    - name: Heroku static site repo from artifact
-      uses: actions/download-artifact@v1
-      with:
-        name: herokuStaticSite
-    - name: Create .netrc for Heroku login
-      run: |+
-        cat >~/.netrc <<EOF
-        machine api.heroku.com
-            login $HEROKU_EMAIL
-            password $HEROKU_API_KEY
-        machine git.heroku.com
-            login $HEROKU_EMAIL
-            password $HEROKU_API_KEY
-        EOF
-      env:
-        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-        HEROKU_EMAIL: ${{ secrets.HEROKU_EMAIL }}
-    - name: Add Heroku remote to temp repo
-      working-directory: herokuStaticSite
-      run: |
-        ls -al
-        heroku git:remote --app $HEROKU_APP-h18
-      env:
-        HEROKU_APP: ${{ secrets.HEROKU_APP }}
-    - name: Git push to Heroku
-      working-directory: herokuStaticSite
-      run: |
-        ls -al
-        git push heroku refs/heads/master -f
