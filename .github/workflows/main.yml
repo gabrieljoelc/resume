@@ -27,7 +27,6 @@ jobs:
       with:
         repository: gabrieljoelc/fresh-themes
         path: fresh-themes
-    - uses: sjdonado/heroku@master
     - uses: mikeal/npx@1.0.0
     - name: Generate FRESH JSON from YAML
       run: ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < default.yml > default.json
@@ -55,6 +54,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+    - uses: sjdonado/heroku@master
     - name: Create .netrc for Heroku login
       run: |+
         cat >~/.netrc <<EOF
@@ -88,6 +88,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+    - uses: sjdonado/heroku@master
     - name: Create .netrc for Heroku login
       run: |+
         cat >~/.netrc <<EOF
