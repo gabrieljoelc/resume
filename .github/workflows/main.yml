@@ -8,6 +8,13 @@ on:
   push:
     branches: [ master ]
     paths:
+      - '.github/*'
+      - 'src/*'
+  pull_request:
+    branches:
+      - 'ci-update/**'
+    paths:
+      - '.github/*'
       - 'src/*'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
