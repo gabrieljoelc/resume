@@ -18,9 +18,9 @@ on:
 jobs:
   build:
     env:
-      PROCESS_DIR: ${{ env.HOME }}/tmp
-      CUSTOM_THEMES_DIR: ${{ env.HOME }}/fresh-themes/themes/jae
-      OUTPUT_DIR: ${{ env.HOME }}/dist
+      PROCESS_DIR: ${{ github.HOME }}/tmp
+      CUSTOM_THEMES_DIR: ${{ github.HOME }}/fresh-themes/themes/jae
+      OUTPUT_DIR: ${{ github.HOME }}/dist
 
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -56,6 +56,8 @@ jobs:
         name: ${{ env.ARTIFACT_NAME }}
         path: ${{ env.OUTPUT_DIR }}
   deployHeroku:
+    env:
+      SITE_DOMAIN: http://www.gabrielchaney.com/
     needs: build
     runs-on: ubuntu-latest
     steps:
