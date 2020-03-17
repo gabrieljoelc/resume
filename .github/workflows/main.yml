@@ -18,6 +18,7 @@ on:
 jobs:
   build:
     env:
+      SRC_DIR: ${{ github.HOME }}/src
       PROCESS_DIR: ${{ github.HOME }}/tmp
       CUSTOM_THEMES_DIR: ${{ github.HOME }}/fresh-themes/themes/jae
       OUTPUT_DIR: ${{ github.HOME }}/dist
@@ -35,6 +36,7 @@ jobs:
         path: fresh-themes
     - uses: mikeal/npx@1.0.0
     - name: Generate FRESH JSON from YAML
+      working-directory: ${{ env.SRC_DIR }}
       run: |
         ls -al
         ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < default.yml > $PROCESS_DIR/default.json
