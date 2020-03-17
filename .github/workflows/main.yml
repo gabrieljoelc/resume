@@ -35,7 +35,7 @@ jobs:
         path: fresh-themes
     - uses: mikeal/npx@1.0.0
     - name: Generate FRESH JSON from YAML
-      working-directory: ${{ env.GITHUB_WORKSPACE }}
+      working-directory: ${{ github.workspace }}
       run: ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < default.yml > $PROCESS_DIR/default.json
     - name: Generate FRESH HTML from JSON using fresh-themes
       working-directory: ${{ env.PROCESS_DIR }}
