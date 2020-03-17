@@ -19,9 +19,9 @@ jobs:
   build:
     env:
       SRC_DIR: ${{ github.workspace }}/src
-      PROCESS_DIR: ${{ github.home }}/tmp
+      PROCESS_DIR: ${{ github.workspace }}/tmp
       CUSTOM_THEMES_DIR: ${{ github.workspace }}/fresh-themes/themes/jae
-      OUTPUT_DIR: ${{ github.home }}/dist
+      OUTPUT_DIR: ${{ github.workspace }}/dist
 
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
