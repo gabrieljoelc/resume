@@ -39,10 +39,14 @@ jobs:
       working-directory: ${{ env.SRC_DIR }}
       run: |
         ls -al
+        mkdir $PROCESS_DIR
+        ls -al
         ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < default.yml > $PROCESS_DIR/default.json
     - name: Generate FRESH HTML from JSON using fresh-themes
       working-directory: ${{ env.PROCESS_DIR }}
       run: |
+        ls -al
+        mkdir $OUTPUT_DIR
         ls -al
         npx hackmyresume BUILD default.json TO $OUTPUT_DIR/index.html -t $CUSTOM_THEMES_DIR
     - name: Prepare Heroku static site
