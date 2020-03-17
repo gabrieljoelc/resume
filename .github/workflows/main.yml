@@ -6,11 +6,6 @@ name: CI
 # events but only for the master branch
 env:
   ARTIFACT_NAME: herokuStaticSite
-  PROCESS_DIR: ${{ env.HOME }}/tmp
-  THEMES_DIR: ${{ env.PROCESS_DIR }}/fresh-themes
-  CUSTOM_THEMES_DIR: ${{ env.THEMES_DIR }}/themes/jae
-  SRC_DIR: ${{ env.GITHUB_WORKSPACE }}/src
-  OUTPUT_DIR: ${{ env.HOME }}/dist
 
 on:
   push:
@@ -40,7 +35,7 @@ jobs:
         path: fresh-themes
     - uses: mikeal/npx@1.0.0
     - name: Generate FRESH JSON from YAML
-      working-directory: ${{ env.SRC_DIR }}
+      working-directory: ${{ env.GITHUB_WORKSPACE }}
       run: ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < default.yml > $PROCESS_DIR/default.json
     - name: Generate FRESH HTML from JSON using fresh-themes
       working-directory: ${{ env.PROCESS_DIR }}
