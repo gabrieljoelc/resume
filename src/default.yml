@@ -46,10 +46,10 @@ employment:
       summary: After a long Rails/*nix dev environment, I returned to my Microsoft .NET roots but at an early stage health-tech startup this time. We were acquired by Philips in May 2019, allowing me to walk through my second startup-to-enterprise transition.
       highlights:
         - Driving microservice development across the team through patterns and technology from message bus for communication to Terraform modules for re-useable infrastructure creation
-        - Leveling-up gaps in process from branching strategies (e.g. gitflow) to documentation (e.g. repo readme's, plantUML) to improved CI/CD definitions (e.g. pipeline yaml over UI)
+        - Filled gaps in process from branching strategies (e.g. gitflow) to documentation (e.g. repo readme's, plantUML) to improved CI/CD definitions (e.g. pipeline yaml over UI)
         - Refactored the core patient enrollment script-like procedure into a resuable, testable library
         - Guided a newer engineer through designing and excuting a message broadcast tool that became one of our most popular tools with clients
-        - Mentoring an amazing group of newer engineers using tools from paired programming to code reviews to a weekly Design Day meeting
+        - Mentored an amazing group of newer engineers using tools from paired programming to code reviews to a weekly Design Day meeting
     - 
       employer: HomeLight
       url: https://www.homelight.com/
