@@ -12,10 +12,11 @@ Generate output using these commands:
 ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' < default.yml > default.json
 # this is a fork that contains a custom theme
 git clone git@github.com:gabrieljoelc/fresh-themes.git
-npm install hackmyresume -g
 # once my custom theme supports multiple formats (i.e. PDF, MS Word) I can specify index.all
-hackmyresume BUILD default.json TO out/index.html -t fresh-themes/themes/jae
+npx hackmyresume BUILD default.json TO out/index.html -t fresh-themes/themes/jae
+npx hackmyresume BUILD default.json TO out/default.pdf -t fresh-themes/themes/jae
 open out/index.html
+open out/default.pdf
 ```
 
 # TODO
