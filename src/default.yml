@@ -19,19 +19,24 @@ employment:
       url: https://www.usa.philips.com/
       position: Senior Software Engineer
       start: 2020-01
+      summary: As my time at both Medumo and Philips progressed, I wanted to focus on growing in my vision, product, business development skills. For example, looking for opportunitites to design and communicate a new API as a potential internal SaaS product. This focus helped prepare me to lead my own company.
       highlights:
-        - Guiding team through updating our legacy systems to scale with increased number of patients
-        - Exploring Kubernetes as a way to loosen coupling on our cloud infrastructure
+        - Guided team through updating our legacy systems to scale with increased number of patients
+        - Built strong working relationships with new hires continuing to leverage my mentoring skills but with more of a product and vision focus
+        - Promoted product vision for a new API that managed SMS sending and consent as a potential internal SaaS product
+        - Drove cross-functional collaboration for a potential new Cariology business opportunity within the Philips product ecosystem
     - 
       employer: Medumo
       url: https://www.medumo.com/
       position: Senior Software Engineer
       start: 2018-03
       end: 2019-12
-      summary: Acquired by Philips in May 2019.
+      summary: After a long Rails/*nix dev environment, I returned to my Microsoft .NET roots but at an early stage health-tech startup this time. We were acquired by Philips in May 2019, allowing me to walk through my second startup-to-enterprise transition.
       highlights:
         - Driving microservice development across the team through patterns and technology from message bus for communication to Terraform modules for re-useable infrastructure creation
         - Leveling-up gaps in process from branching strategies (e.g. gitflow) to documentation (e.g. repo readme's, plantUML) to improved CI/CD definitions (e.g. pipeline yaml over UI)
+        - Refactored the core patient enrollment script-like procedure into a resuable, testable library
+        - Guided a newer engineer through designing and excuting a message broadcast tool that became one of our most popular tools with clients
         - Mentoring an amazing group of newer engineers using tools from paired programming to code reviews to a weekly Design Day meeting
     - 
       employer: HomeLight
@@ -39,6 +44,7 @@ employment:
       position: Software Engineer
       start: 2018-01
       end: 2018-03
+      summary: This was a transitional period for me leaving my first acquisition experience. I got in right after a Series A round at Homelight and realized that I wanted another early-stage startup experience to practice all I had learned.
     - 
       employer: RetailMeNot
       url: https://retailmenot.com
