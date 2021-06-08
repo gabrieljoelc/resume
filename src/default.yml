@@ -13,23 +13,24 @@ education:
   level: degree
   summary: ~
 employment:
+  history:
     -
       employer: Package Portal Inc.
       url: https://www.packageportal.com/
       position: Co-founder, CTO
       start: 2019-06
-      summary: I achieved one of my long-term goals and co-founded a product company: Package Portal. This company will bring contactless delivery confirmation to the global consumer-e-commerce relationship. We will drive improved delivery quality, returning customers to the best merchants, and fun incentives to consumers including cyptocurrencies.
+      summary: 'I achieved one of my long-term goals and co-founded a product company: Package Portal. This company will bring contactless delivery confirmation to the global consumer-e-commerce relationship. We will drive improved delivery quality, returning customers to the best merchants, and fun incentives to consumers including cyptocurrencies.'
       highlights:
         - Learned React Native and Hasura GraphQL and built my first native app
         - Coordinated the creation of our initial branding, logo, and UX flows with a UX designer
         - Rallied a small team of engineers to ship V1 of the native app, backend services, and blockchain integration
         - Set-up company IT infrastructure: GSuite, Rippling, Slack, authentication, and cloud hosting
-  history:
     - 
       employer: Philips
       url: https://www.usa.philips.com/
       position: Senior Software Engineer
       start: 2020-01
+      end: 2021-6
       summary: As my time at both Medumo and Philips progressed, I wanted to focus on growing in my vision, product, and business development skills. For example, I promoted the development of a new API as a potential internal SaaS product. This focus helped prepare me to lead my own company.
       highlights:
         - Guided team through updating our legacy systems to scale with increased number of patients
