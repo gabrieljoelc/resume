@@ -75,6 +75,12 @@ jobs:
       uses: actions/download-artifact@v1
       with:
         name: ${{ env.ARTIFACT_NAME }}
+    - name: Create transient repository for Heroku deploy
+      working-directory: ${{ env.ARTIFACT_NAME }}
+      run: |
+        git init
+        git add .
+        git commit -m "Prep for Heroku deploy"
     - uses: akhileshns/heroku-deploy@v3.12.12
       with:
         heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
