@@ -84,8 +84,8 @@ jobs:
         git add .
         git commit -m "Prep for Heroku deploy"
     - uses: akhileshns/heroku-deploy@v3.12.12
-      working-directory: ${{ env.ARTIFACT_NAME }}
       with:
+        appdir: ${{ env.ARTIFACT_NAME }}
         heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
         heroku_app_name: ${{ secrets.HEROKU_APP }}
         heroku_email: ${{ secrets.HEROKU_EMAIL }}
