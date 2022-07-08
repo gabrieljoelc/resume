@@ -75,21 +75,21 @@ jobs:
       uses: actions/download-artifact@v1
       with:
         name: ${{ env.ARTIFACT_NAME }}
-    - name: Create transient repository for Heroku deploy
-      working-directory: ${{ env.ARTIFACT_NAME }}
-      run: |
-        ls -al
-        git config --global user.email ${{ secrets.HEROKU_EMAIL }}
-        git config --global user.name "Gabriel Chaney"
-        git init
-        git add .
-        git status
-        git commit -m "Prep for Heroku deploy"
-        ls -al
-        #- uses: akhileshns/heroku-deploy@v3.12.12
-        #  with:
-        #    appdir: ${{ env.ARTIFACT_NAME }}
-        #    heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-        #    heroku_app_name: ${{ secrets.HEROKU_APP }}
-        #    heroku_email: ${{ secrets.HEROKU_EMAIL }}
-        #    healthcheck: ${{ env.APP_HEALTH }}
+        #- name: Create transient repository for Heroku deploy
+        #  working-directory: ${{ env.ARTIFACT_NAME }}
+        #  run: |
+        #    ls -al
+        #    git config --global user.email ${{ secrets.HEROKU_EMAIL }}
+        #    git config --global user.name "Gabriel Chaney"
+        #    git init
+        #    git add .
+        #    git status
+        #    git commit -m "Prep for Heroku deploy"
+        #    ls -al
+    - uses: akhileshns/heroku-deploy@v3.12.12
+      with:
+        appdir: ${{ env.ARTIFACT_NAME }}
+        heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+        heroku_app_name: ${{ secrets.HEROKU_APP }}
+        heroku_email: ${{ secrets.HEROKU_EMAIL }}
+        healthcheck: ${{ env.APP_HEALTH }}
