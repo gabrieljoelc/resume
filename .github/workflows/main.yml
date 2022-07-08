@@ -67,6 +67,7 @@ jobs:
   deployHeroku:
     env:
       SITE_DOMAIN: http://www.gabrielchaney.com/
+      APP_HEALTH: "https://${{ secrets.HEROKU_APP }}.herokuapp.com/health"
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -79,4 +80,4 @@ jobs:
         heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
         heroku_app_name: ${{ secrets.HEROKU_APP }}
         heroku_email: ${{ secrets.HEROKU_EMAIL }}
-        healthcheck: "https://${{ secrets.HEROKU_APP }}.herokuapp.com/health"
+        healthcheck: ${{ env.APP_HEALTH }}
