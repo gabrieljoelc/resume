@@ -83,7 +83,6 @@ jobs:
         heroku_app_name: ${{ env.HEROKU_APP }}
         heroku_email: ${{ secrets.HEROKU_EMAIL }}
         justlogin: true
-    - run: heroku login
     - name: Add Heroku remote to temp repo
       working-directory: ${{ env.ARTIFACT_NAME }}
       run: |
