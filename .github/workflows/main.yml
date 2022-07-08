@@ -3,13 +3,13 @@
 name: CI
 
 # Controls when the action will run. Triggers the workflow on push or pull request 
-# events but only for the master branch
+# events but only for the main branch
 env:
   ARTIFACT_NAME: herokuStaticSite
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
     branches:
       - ci-update/*
@@ -97,6 +97,6 @@ jobs:
     - name: Git push to Heroku
       working-directory: ${{ env.ARTIFACT_NAME }}
       run: |
-        git push heroku refs/heads/master -f
+        git push heroku refs/heads/main -f
     - name: Check that website responds
       run: curl $SITE_DOMAIN --retry 3
