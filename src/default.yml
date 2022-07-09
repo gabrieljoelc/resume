@@ -50,7 +50,7 @@ employment:
         - Drove microservice development across the team through patterns and technology from message bus for communication to Terraform modules for re-useable infrastructure creation
         - Filled gaps in process from branching strategies (e.g. gitflow) to documentation (e.g. repo readme's, plantUML) to improved CI/CD definitions (e.g. pipeline yaml over UI)
         - Refactored the core patient enrollment script-like procedure into a resuable, testable library
-        - Built HIPAA-compliant integrations with the medical record systems with multiple hospitals receiving millions of messages from these hospitals
+        - Built HIPAA-compliant integrations with the medical record systems including Epic with multiple hospitals receiving millions of messages from these hospitals
         - Guided a newer engineer through designing and excuting a message broadcast tool that became one of our most popular tools with clients
         - Mentored an amazing group of newer engineers using paired programming to code reviews to a weekly Design Day meeting
     - 
