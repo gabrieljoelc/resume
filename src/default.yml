@@ -153,11 +153,11 @@ employment:
         - Entity Framework Code-First
         - Visual Studio
     - 
-      employer: National Council of Architectural Registration Boards
+      employer: National Council of Architectural Registration Boards (NCARB)
       position: Software Engineer
       start: 2011-02
       end: 2013-06
-      summary: I joined a newly formed team to upgrade this not-for-profit's legacy .NET applications to next-gen .NET applications. This is where I was introduced to methodologies like Scrum, Domain-Driven Design and distributed systems design. I took classes from Eric Evans (Domain-Driven Design author) and Udi Dahan (NServiceBus author).
+      summary: NCARB develops education and services for the architectural registration boards of the 54 US states and territories. This is where I was introduced to methodologies like Scrum, Domain-Driven Design and distributed systems design. I took classes from Eric Evans (Domain-Driven Design author) and Udi Dahan (NServiceBus author) as receiving a Scrum certification.
       url: https://www.ncarb.org/
       highlights:
         - Built JavaScript and CSS infrastructure for the new flagship web application
