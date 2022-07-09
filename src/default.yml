@@ -45,7 +45,7 @@ employment:
       position: Senior Software Engineer
       start: 2018-03
       end: 2019-12
-      summary: Medumo was a health tech company focused on helped healthcare organizations send instructions to patients using SMS, email, snail mail, etc.
+      summary: Medumo was a health tech company focused on helped healthcare organizations send instructions to patients using SMS, email, snail mail, etc. Philips acquired in 2019.
       highlights:
         - Drove microservice development across the team through patterns and technology from message bus for communication to Terraform modules for re-useable infrastructure creation
         - Filled gaps in process from branching strategies (e.g. gitflow) to documentation (e.g. repo readme's, plantUML) to improved CI/CD definitions (e.g. pipeline yaml over UI)
