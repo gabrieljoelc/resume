@@ -33,7 +33,7 @@ employment:
       position: Lead Engineer
       start: 2020-01
       end: 2021-6
-      summary: Philips is a multinational health care company. Our group's focus was to continue the patient instruction product Medumo was acquired for.
+      summary: Philips is a multinational health care company. Our grouped continued supporting the Medumo patient instruction product.
       highlights:
         - Guided team through updating our legacy systems to scale with increased number of patients
         - Built strong working relationships with new hires continuing to leverage my mentoring skills but with more of a product and vision focus
@@ -45,14 +45,14 @@ employment:
       position: Senior Software Engineer
       start: 2018-03
       end: 2019-12
-      summary: Medumo was a health tech company focused on helped healthcare organizations send instructions to patients using SMS, email, snail mail, etc. Philips acquired in 2019.
+      summary: Medumo was a health tech company focused on helped healthcare organizations send instructions to patients using SMS, email, snail mail, etc. Acquired by Philips in 2019.
       highlights:
         - Drove microservice development across the team through patterns and technology from message bus for communication to Terraform modules for re-useable infrastructure creation
         - Filled gaps in process from branching strategies (e.g. gitflow) to documentation (e.g. repo readme's, plantUML) to improved CI/CD definitions (e.g. pipeline yaml over UI)
         - Refactored the core patient enrollment script-like procedure into a resuable, testable library
         - Built HIPAA-compliant integrations with the medical record systems including Epic with multiple hospitals receiving millions of messages from these hospitals
         - Guided a newer engineer through designing and excuting a message broadcast tool that became one of our most popular tools with clients
-        - Mentored an amazing group of newer engineers using paired programming to code reviews to a weekly Design Day meeting
+        - Mentored an amazing group of newer engineers using paired programming, code reviews, and a weekly Design Day meeting
     - 
       employer: HomeLight
       url: https://www.homelight.com/
@@ -118,7 +118,7 @@ employment:
       position: Lead Engineer
       start: 2014-04
       end: 2016-04
-      summary: Giftcard Zen was a pre-owned gift card marketplace. RetailMeNot acquired in 2016.
+      summary: Giftcard Zen was a pre-owned gift card marketplace. Acquired by RetailMeNot in 2016.
       highlights:
         - Built the foundation for the continuous integration and delivery pipeline
         - Shepherded architecture from monoliths towards microservices
