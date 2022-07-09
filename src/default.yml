@@ -115,10 +115,10 @@ employment:
     - 
       employer: Giftcard Zen
       url: https://giftcardzen.com
-      position: Lead Developer
+      position: Lead Engineer
       start: 2014-04
       end: 2016-04
-      summary: I transitioned from years of experience in a .NET enterprise environment to a Rails startup environment. I was able to apply many design principles I learned at NCARB (DDD, distributed system design, etc.) to guide a small team towards a microservices architecture and a continuous delivery pipeline. We were able to ship the features, survive the DDoS attacks, and be a fun united team to be acquired by RetailMenot in April 2016.
+      summary: Giftcard Zen was a pre-owned gift card marketplace. RetailMeNot acquired in 2016.
       highlights:
         - Built the foundation for the continuous integration and delivery pipeline
         - Shepherded architecture from monoliths towards microservices
