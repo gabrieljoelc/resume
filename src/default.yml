@@ -19,11 +19,13 @@ employment:
       url: https://www.packageportal.com/
       position: Co-founder, CTO
       start: 2019-06
-      summary: 'I achieved one of my long-term goals and co-founded a product company: Package Portal. This company will bring contactless delivery confirmation to the global consumer-e-commerce relationship. We will drive improved delivery quality, returning customers to the best merchants, and fun incentives to consumers including cryptocurrencies.'
+      summary: 'Package Portal provides Web3 cryptocurrency incentives for user feedback. Co-founding this company was achieving one of my long-term goals.'
       highlights:
-        - Learned React Native and Hasura GraphQL and built my first native app
-        - Coordinated the creation of our initial branding, logo, and UX flows with a UX designer
-        - Rallied a small team of engineers to ship V1 of the native app, backend services, and blockchain integration
+        - Learned React Native, Hasura GraphQL, and Firebase authentication to build my first native app
+        - Recruited small team of founding engineers
+        - Set the tone for architecture and API and pub/sub governance
+        - Coordinated the creation of our initial branding, logo, and UX flows with UX designers
+        - Established pipeline of engineering contractor for building integration tests and internal libraries
         - "Set-up company IT infrastructure: GSuite, Rippling, Slack, authentication, and cloud hosting"
     - 
       employer: Philips
