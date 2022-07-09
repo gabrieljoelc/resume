@@ -157,13 +157,15 @@ employment:
       position: Software Engineer
       start: 2011-02
       end: 2013-06
-      summary: NCARB develops education and services for the architectural registration boards of the 54 US states and territories. This is where I was introduced to methodologies like Scrum, Domain-Driven Design and distributed systems design. I took classes from Eric Evans (Domain-Driven Design author) and Udi Dahan (NServiceBus author) as receiving a Scrum certification.
+      summary: NCARB develops education and services for the architectural registration boards of the 54 US states and territories.
       url: https://www.ncarb.org/
       highlights:
         - Built JavaScript and CSS infrastructure for the new flagship web application
         - Facilitated collaboration between between third-party UX team and the development team
         - Promoted the use of Backbone.js to the development team
         - Recommend a better solution for the new evaluation report which resulted in a different feature roadmap
+        - Completed classes taught by Eric Evans (Domain-Driven Design author) and Udi Dahan (NServiceBus author), respectively
+        - Obtained my Scrum certification
       keywords:
         - C#
         - Visual Studio
