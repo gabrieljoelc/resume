@@ -176,7 +176,7 @@ employment:
       end: 2013-06
       summary: InfernoRed is a software consutlant shop. I helped a new consulting firm build and improve software for their clients. I played a key role in answering client performance questions about their SaaS web application as well as contributed to web and mobile applications.
       highlights:
-        - Built a heavliy customized load test suite for testing a multi-tenant app
+        - Built a heavily customized load test suite for testing a multi-tenant app
         - Presented performance analysis and recommendations to the client VP and leads
         - Contributed to development efforts on a Windows Store app
       keywords:
