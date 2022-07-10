@@ -55,6 +55,14 @@ employment:
         - Built strong working relationships with new hires continuing to leverage my mentoring skills but with more of a product and vision focus
         - Promoted product vision for a new API that managed SMS sending and consent as a potential internal SaaS product including a mention in a Twilio blog post
         - Drove cross-functional collaboration for a potential new cardiology business opportunity within the Philips product ecosystem
+      keywords:
+        - .NET Core
+        - C#
+        - Azure Service Bus
+        - Twilio
+        - SQL Server
+        - Azure DevOps
+        - Terraform
     - 
       employer: Medumo
       url: https://www.medumo.com/
@@ -69,6 +77,14 @@ employment:
         - Built HIPAA-compliant integrations with the medical record systems including Epic with multiple hospitals receiving millions of messages from these hospitals
         - Guided a newer engineer through designing and excuting a message broadcast tool that became one of our most popular tools with clients
         - Mentored an amazing group of newer engineers using paired programming, code reviews, and a weekly Design Day meeting
+      keywords:
+        - .NET Core
+        - C#
+        - Azure Service Bus
+        - Twilio
+        - SQL Server
+        - Azure DevOps
+        - Terraform
     - 
       employer: HomeLight
       url: https://www.homelight.com/
