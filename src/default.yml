@@ -19,51 +19,86 @@ employment:
       url: https://www.packageportal.com/
       position: Co-founder, CTO
       start: 2019-06
-      summary: 'I achieved one of my long-term goals and co-founded a product company: Package Portal. This company will bring contactless delivery confirmation to the global consumer-e-commerce relationship. We will drive improved delivery quality, returning customers to the best merchants, and fun incentives to consumers including cryptocurrencies.'
+      summary: 'Package Portal provides Web3 cryptocurrency incentives for user feedback. Co-founding this company was achieving one of my long-term goals.'
       highlights:
-        - Learned React Native and Hasura GraphQL and built my first native app
-        - Coordinated the creation of our initial branding, logo, and UX flows with a UX designer
-        - Rallied a small team of engineers to ship V1 of the native app, backend services, and blockchain integration
+        - Recruited small team of founding engineers
+        - Set the tone for architecture and API and pub/sub governance
+        - Learned native app development from the ground up and shipped app to App Store and Google Play for the first time
+        - Coordinated the creation of our initial branding, logo, and UX flows with contracted UX designers
+        - Lead the defining of OKR's each quarter
+        - Established pipeline of engineering contractors for building integration tests and internal libraries
         - "Set-up company IT infrastructure: GSuite, Rippling, Slack, authentication, and cloud hosting"
+      keywords:
+        - Firebase
+        - React Native
+        - Hasura GraphQL
+        - PostgreSQL
+        - NodeJS
+        - Python
+        - Push notifications
+        - Sentry
+        - AWS API Gateway
+        - AWS SNS
+        - ReactJS
+        - Terraform
+        - Smart contracts
+        - Github Actions
     - 
       employer: Philips
       url: https://www.usa.philips.com/
-      position: Senior Software Engineer
+      position: Lead Engineer
       start: 2020-01
       end: 2021-6
-      summary: As my time at both Medumo and Philips progressed, I wanted to focus on growing in my vision, product, and business development skills. For example, I promoted the development of a new API as a potential internal SaaS product. This focus helped prepare me to lead my own company.
+      summary: Philips is a multinational health care company. Our grouped continued supporting the Medumo patient instruction product.
       highlights:
         - Guided team through updating our legacy systems to scale with increased number of patients
         - Built strong working relationships with new hires continuing to leverage my mentoring skills but with more of a product and vision focus
-        - Promoted product vision for a new API that managed SMS sending and consent as a potential internal SaaS product
+        - Promoted product vision for a new API that managed SMS sending and consent as a potential internal SaaS product including a mention in a Twilio blog post
         - Drove cross-functional collaboration for a potential new cardiology business opportunity within the Philips product ecosystem
+      keywords:
+        - .NET Core
+        - C#
+        - Azure Service Bus
+        - Twilio
+        - SQL Server
+        - Azure DevOps
+        - Terraform
     - 
       employer: Medumo
       url: https://www.medumo.com/
       position: Senior Software Engineer
       start: 2018-03
       end: 2019-12
-      summary: After a long Rails/*nix dev environment, I returned to my Microsoft .NET roots but at an early stage health-tech startup this time. We were acquired by Philips in May 2019, allowing me to walk through my second startup-to-enterprise transition.
+      summary: Medumo was a health tech company focused on helped healthcare organizations send instructions to patients using SMS, email, snail mail, etc. Acquired by Philips in 2019.
       highlights:
-        - Driving microservice development across the team through patterns and technology from message bus for communication to Terraform modules for re-useable infrastructure creation
+        - Drove microservice development across the team through patterns and technology from message bus for communication to Terraform modules for re-useable infrastructure creation
         - Filled gaps in process from branching strategies (e.g. gitflow) to documentation (e.g. repo readme's, plantUML) to improved CI/CD definitions (e.g. pipeline yaml over UI)
         - Refactored the core patient enrollment script-like procedure into a resuable, testable library
+        - Built HIPAA-compliant integrations with the medical record systems including Epic with multiple hospitals receiving millions of messages from these hospitals
         - Guided a newer engineer through designing and excuting a message broadcast tool that became one of our most popular tools with clients
-        - Mentored an amazing group of newer engineers using tools from paired programming to code reviews to a weekly Design Day meeting
+        - Mentored an amazing group of newer engineers using paired programming, code reviews, and a weekly Design Day meeting
+      keywords:
+        - .NET Core
+        - C#
+        - Azure Service Bus
+        - Twilio
+        - SQL Server
+        - Azure DevOps
+        - Terraform
     - 
       employer: HomeLight
       url: https://www.homelight.com/
       position: Software Engineer
       start: 2018-01
       end: 2018-03
-      summary: This was a transitional period for me leaving my first acquisition experience. I got in right after a Series A round at Homelight and realized that I wanted another early-stage startup experience to practice all I had learned.
+      summary: HomeLight automates connecting real estate agents with home sellers. This was a transitional period for me leaving my first acquisition experience. I arrived right after a Series A round and realized that I wanted another early-stage startup experience to practice all I had learned.
     - 
       employer: RetailMeNot
       url: https://retailmenot.com
       position: Engineering Manager
       start: 2016-08
-      start: 2017-12
-      summary: I assumed a manager role in August. I have the privilege of empowering a growing number of engineers in a new office through many technical and cultural changes. I also helped lead the team to ship APIs and products critical in the first year of acquisition.
+      end: 2017-12
+      summary: RetailMeNot provides multiple ways to save consumers on retail purchases using gift cards, coupon codes, etc. I had the privilege of empowering a growing number of engineers in a new office through many technical and cultural changes. I also helped lead the team to ship APIs and products critical in the first year of acquisition.
       highlights:
         - Played a pivotal role in doubling the total team size in the first year of acquisition
         - Designed and shipped an alpha and private beta of a new mobile product
@@ -95,7 +130,7 @@ employment:
       summary: This was a transitional post-acquisition position as the company calibrated to the existing team and the business direction.
       highlights:
         - Organized engineering group into 3 teams
-        - Led teams to adopt Scrum with great success
+        - Led teams to adopt a Scrum-like process with great success
         - Delivered initial UI that denoted acquisition
         - Worked with teams in Austin to develop initial post-acquisition roadmap
       keywords:
@@ -112,10 +147,10 @@ employment:
     - 
       employer: Giftcard Zen
       url: https://giftcardzen.com
-      position: Lead Developer
+      position: Lead Engineer
       start: 2014-04
       end: 2016-04
-      summary: I transitioned from years of experience in a .NET enterprise environment to a Rails startup environment. I was able to apply many design principles I learned at NCARB (DDD, distributed system design, etc.) to guide a small team towards a microservices architecture and a continuous delivery pipeline. We were able to ship the features, survive the DDoS attacks, and be a fun united team to be acquired by RetailMenot in April 2016.
+      summary: Giftcard Zen was a pre-owned gift card marketplace. Acquired by RetailMeNot in 2016.
       highlights:
         - Built the foundation for the continuous integration and delivery pipeline
         - Shepherded architecture from monoliths towards microservices
@@ -139,7 +174,7 @@ employment:
       position: Software Engineer
       start: 2014-04
       end: 2013-06
-      summary: I helped a new consulting firm build and improve software for their clients. I played a key role in answering client performance questions about their SaaS web application as well as contributed to web and mobile applications. This was a remote position that also included visiting client sites.
+      summary: InfernoRed is a software consutlant shop. I helped a new consulting firm build and improve software for their clients. I played a key role in answering client performance questions about their SaaS web application as well as contributed to web and mobile applications.
       highlights:
         - Built a heavliy customized load test suite for testing a multi-tenant app
         - Presented performance analysis and recommendations to the client VP and leads
@@ -150,17 +185,19 @@ employment:
         - Entity Framework Code-First
         - Visual Studio
     - 
-      employer: National Council of Architectural Registration Boards
+      employer: National Council of Architectural Registration Boards (NCARB)
       position: Software Engineer
       start: 2011-02
       end: 2013-06
-      summary: I joined a newly formed team to upgrade this not-for-profit's legacy .NET applications to next-gen .NET applications. This is where I was introduced to methodologies like Scrum, Domain-Driven Design and distributed systems design. I took classes from Eric Evans (Domain-Driven Design author) and Udi Dahan (NServiceBus author).
+      summary: NCARB develops education and services for the architectural registration boards of the 54 US states and territories.
       url: https://www.ncarb.org/
       highlights:
         - Built JavaScript and CSS infrastructure for the new flagship web application
         - Facilitated collaboration between between third-party UX team and the development team
         - Promoted the use of Backbone.js to the development team
         - Recommend a better solution for the new evaluation report which resulted in a different feature roadmap
+        - Completed classes taught by Eric Evans (Domain-Driven Design author) and Udi Dahan (NServiceBus author), respectively
+        - Obtained my Scrum certification
       keywords:
         - C#
         - Visual Studio
@@ -209,9 +246,9 @@ employment:
         - HTML/CSS
   summary: 10+ years software development experience.
 info: 
-  brief: "With over a decade of software engineering experience from enterprise to startups, leading teams to shipping code, joining companies to starting them, Gabe's journey and relationships have shaped him to lead humans that build technologies for the humans they provide products and services for."
+  brief: "With over a decade of software engineering experience in enterprises, startups, leading teams, shipping code, acquisitions, and co-founding, Gabe's journey and relationships have shaped him to lead the humans that build the software products for the humans that use them. Gabe has a strong focus on mentorship, product delivery, and architecture."
   characterClass: Programmer
-  label: Software Engineer & Leader
+  label: Leader & Software Engineer
 location: 
   city: Phoenix
   country: US
