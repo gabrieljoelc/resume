@@ -19,12 +19,12 @@ employment:
       url: https://www.packageportal.com/
       position: Co-founder, CTO
       start: 2019-06
-      summary: 'Package Portal provides Web3 cryptocurrency incentives for user feedback. Co-founding this company was achieving one of my long-term goals.'
+      summary: 'Package Portal provides Web3 cryptocurrency incentives for user feedback. Co-founding was achieving one of my long-term goals.'
       highlights:
         - Recruited small team of founding engineers
         - Set the tone for architecture and API and pub/sub governance
         - Learned native app development from the ground up and shipped app to App Store and Google Play for the first time
-        - Coordinated the creation of our initial branding, logo, and UX flows with contracted UX designers
+        - Coordinated with contracted UX designers to create and implement logo, branding, and design system
         - Lead the defining of OKR's each quarter
         - Established pipeline of engineering contractors for building integration tests and internal libraries
         - "Set-up company IT infrastructure: GSuite, Rippling, Slack, authentication, and cloud hosting"
@@ -37,12 +37,12 @@ employment:
         - Python
         - Push notifications
         - Sentry
+        - Github Actions
         - AWS API Gateway
         - AWS SNS
         - ReactJS
         - Terraform
         - Smart contracts
-        - Github Actions
     - 
       employer: Philips
       url: https://www.usa.philips.com/
@@ -207,46 +207,9 @@ employment:
         - Service Oriented Architecture
         - Distributed transactions
         - Publish / subscribe
-    - 
-      employer: Lockheed Martin
-      url: https://www.lockheedmartin.com
-      position: Software Engineer
-      start: 2011-02
-      end: 2007-08
-      summary: I delivered my first production applications that included object-oriented designs, jQuery, ORM, and HTTP API calls.
-      highlights:
-        - Championed jQuery to the team to meet a customer request for web UI performance improvements
-        - Added client web service requests to external systems which decreased HR analyst processing time from three weeks to just over one week
-        - Drove changes to replace the use of stored procedures with ORM
-        - Integrated with a Netconf API to configure Cisco routers
-      keywords:
-        - C#
-        - Visual Studio
-        - ASP.NET WebForms
-        - jQuery
-        - HTML/CSS
-        - Fluent NHibernate
-        - SQL Server
-        - Oracle
-        - Java
-    - 
-      employer: Harmony House
-      position: Web Developer/Salesman
-      start: 2007-08
-      end: 1999-03
-      summary: This is where I built my first web application while I was working on my CS degree (awww). I introduced myself to CSS, HTML, PHP, and MVC through this creative process. I had so much fun learning and building.
-      highlights:
-        - Set-up local area network and point-of-sale system
-        - Built store website including a custom content management system increasing piano sales by 48%
-        - Sold guitars
-      keywords:
-        - PHP
-        - MVC
-        - MySQL
-        - HTML/CSS
   summary: 10+ years software development experience.
 info: 
-  brief: "With over a decade of software engineering experience in enterprises, startups, leading teams, shipping code, acquisitions, and co-founding, Gabe's journey and relationships have shaped him to lead the humans that build the software products for the humans that use them. Gabe has a strong focus on mentorship, product delivery, and architecture."
+  brief: "Gabe has over a decade of software engineering experience in enterprises, startups, leading teams, shipping code, acquisitions, and co-founding. This journey has shaped him to lead teams to build human-first products. Gabe has a strong focus on mentorship, product delivery, and architecture."
   characterClass: Programmer
   label: Leader & Software Engineer
 location: 
