@@ -24,7 +24,7 @@ employment:
         - Recruited small team of founding engineers
         - Set the tone for architecture and API and pub/sub governance
         - Learned native app development from the ground up and shipped app to App Store and Google Play for the first time
-        - Coordinated the creation of our initial branding, logo, and UX flows with contracted UX designers
+        - Coordinated with contracted UX designers to create and implement logo, branding, and design system
         - Lead the defining of OKR's each quarter
         - Established pipeline of engineering contractors for building integration tests and internal libraries
         - "Set-up company IT infrastructure: GSuite, Rippling, Slack, authentication, and cloud hosting"
@@ -37,12 +37,12 @@ employment:
         - Python
         - Push notifications
         - Sentry
+        - Github Actions
         - AWS API Gateway
         - AWS SNS
         - ReactJS
         - Terraform
         - Smart contracts
-        - Github Actions
     - 
       employer: Philips
       url: https://www.usa.philips.com/
