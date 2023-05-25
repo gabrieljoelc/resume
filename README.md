@@ -6,6 +6,9 @@ This is my personal resume in [FRESH](https://github.com/fresh-standard/FRESCA) 
 
 # Build
 
+Prerequsities:
+- `brew install wkhtmltopdf`
+
 Generate output using these commands:
 ```
 # this line is an awkward hack because HackMyResume doesn't accept YAML for some reason
