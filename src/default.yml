@@ -4,11 +4,11 @@ contact:
   phone: 602-332-3761
   website: https://gabrielchaney.com
 education: 
-  degree: BS E.
+  degree: BSE
   history: 
     - 
       institution: Arizona State University
-      title: BS E, Computer Systems Engineering
+      title: BSE, Computer Systems Engineering
       url: https://www.asu.edu
   level: degree
   summary: ~
@@ -89,11 +89,11 @@ employment:
       end: 2019-12
       summary: Medumo was a health tech company focused on helped healthcare organizations send instructions to patients using SMS, email, snail mail, etc. Acquired by Philips in 2019.
       highlights:
-        - Drove microservice development across the team through patterns and technology from message bus for communication to Terraform modules for re-useable infrastructure creation
+        - Drove microservice development across the team through patterns and technology from message bus for communication to Terraform modules for reusable infrastructure creation
         - Filled gaps in process from branching strategies (e.g. gitflow) to documentation (e.g. repo readme's, plantUML) to improved CI/CD definitions (e.g. pipeline yaml over UI)
-        - Refactored the core patient enrollment script-like procedure into a resuable, testable library
+        - Refactored the core patient enrollment script-like procedure into a reusable, testable library
         - Built HIPAA-compliant integrations with the medical record systems including Epic with multiple hospitals receiving millions of messages from these hospitals
-        - Guided a newer engineer through designing and excuting a message broadcast tool that became one of our most popular tools with clients
+        - Guided a newer engineer through designing and executing a message broadcast tool that became one of our most popular tools with clients
         - Mentored an amazing group of newer engineers using paired programming, code reviews, and a weekly Design Day meeting
       keywords:
         - .NET Core
@@ -173,7 +173,7 @@ employment:
         - Built the foundation for the continuous integration and delivery pipeline
         - Shepherded architecture from monoliths towards microservices
         - Drove use of pub/sub including initiating an in-house developed open source project foundational in our architecture
-        - Helped develop a scaleable interview process to build the core team        
+        - Helped develop a scalable interview process to build the core team
         - Developed and presented technical documentation for the RetailMeNot acquisition due-diligence team including their CTO
       keywords:
         - Ruby on Rails
@@ -192,7 +192,7 @@ employment:
       position: Software Engineer
       start: 2014-04
       end: 2013-06
-      summary: InfernoRed is a software consutlant shop. I helped a new consulting firm build and improve software for their clients. I played a key role in answering client performance questions about their SaaS web application as well as contributed to web and mobile applications.
+      summary: InfernoRed is a software consultant shop. I helped a new consulting firm build and improve software for their clients. I played a key role in answering client performance questions about their SaaS web application as well as contributed to web and mobile applications.
       highlights:
         - Built a heavily customized load test suite for testing a multi-tenant app
         - Presented performance analysis and recommendations to the client VP and leads
