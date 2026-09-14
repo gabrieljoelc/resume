@@ -1,12 +1,12 @@
---- 
-contact: 
+---
+contact:
   email: gabriel.chaney@gmail.com
   phone: 602-332-3761
   website: https://gabrielchaney.com
-education: 
+education:
   degree: BSE
-  history: 
-    - 
+  history:
+    -
       institution: Arizona State University
       title: BSE, Computer Systems Engineering
       url: https://www.asu.edu
@@ -15,26 +15,38 @@ education:
 employment:
   history:
     -
-      employer: Squadformers
-      url: https://www.squadformers.com/
+      employer: Aligned
+      url: https://aligned.team/
+      position: Staff Software Engineer
+      start: 2023-06
+      summary: "Aligned (formerly Squadformers) embeds dedicated, senior product teams inside mission-driven companies. The team works as the partner's own, aligned to its mission."
+      highlights:
+        - "Tech lead for Aligned's Imgix partnership since 2024. Led the subscription billing migration and a staged Angular → Next.js migration behind feature switches, including the server-side data patterns the team now builds on."
+        - "Launched PageWeight, a public web performance analysis tool that Imgix's sales team used for months before it became a marketing lead-gen asset."
+        - "Brought AI-native practices into delivery: Claude Code and Playwright QA workflows, PR-readiness standards for UI work, and an onboarding setup that lets designers ship dashboard fixes directly."
+        - "Earlier at Aligned: built an AI deal-intelligence MVP for a supply-chain client using OpenAI function calling and embeddings, backed by a Terraform/Azure CI/CD pipeline."
+        - "Across Aligned: I own the engineering playbook for enterprise engagements and rebuilt our technical interview setup."
+    -
+      employer: Aligned
+      url: https://aligned.team/
       position: Lead Software Engineer
-      start: 2022-09
-      summary: 'Leading small teams to make multiple startup clients successful.'
+      start: 2022-08
+      end: 2023-06
       highlights:
         - 'Fintech client:'
         - Collaborated with the CTO of our client's main client to develop integration
         - Negotiated difficult decision making with client's CEO around the native app timelines
-        - Supported the team with AWS DevOps work learning a new infrastructure-as-code tool (AWS Copilot)
+        - Supported the team with AWS DevOps work learning a new infrastructure-as-code tool (AWS Amplify)
         - Worked closely with the Product Manager to set the tone and define the work of sprints
         - Built a .NET API client example for our client's client
-        - 'Paper, EdTech client:'
+        - 'EdTech client:'
         - Built strong trust with new partner/client first week on the job
         - Developed prototype to demonstrate text-to-speech support in React Native
         - Set direction for CI/CD improvements for React Native builds
     -
-      employer: Package Portal Inc.
+      employer: Package Portal, Inc.
       url: https://www.packageportal.com/
-      position: Co-founder, CTO
+      position: Co-Founder, Chief Technology Officer
       start: 2019-06
       end: 2022-09
       summary: 'Package Portal provides Web3 cryptocurrency incentives for user feedback. Co-founding was achieving one of my long-term goals.'
@@ -43,9 +55,9 @@ employment:
         - Set the tone for architecture and API and pub/sub governance
         - Learned native app development from the ground up and shipped app to App Store and Google Play for the first time
         - Coordinated with contracted UX designers to create and implement logo, branding, and design system
-        - Lead the defining of OKR's each quarter
+        - Led quarterly OKR planning
         - Established pipeline of engineering contractors for building integration tests and internal libraries
-        - "Set-up company IT infrastructure: GSuite, Rippling, Slack, authentication, and cloud hosting"
+        - "Set up company IT infrastructure: GSuite, Rippling, Slack, authentication, and cloud hosting"
       keywords:
         - Firebase
         - React Native
@@ -61,13 +73,19 @@ employment:
         - ReactJS
         - Terraform
         - Smart contracts
-    - 
+    -
+      employer: Binarii Labs
+      position: Software Engineering Advisor
+      start: 2022-04
+      end: 2022-08
+      summary: Part-time advisory role.
+    -
       employer: Philips
       url: https://www.usa.philips.com/
-      position: Lead Engineer
+      position: Software Engineering Lead
       start: 2020-01
       end: 2021-06
-      summary: Philips is a multinational healthcare company. Our group continued supporting the Medumo patient instruction product.
+      summary: Philips is a multinational health care company. Our group continued supporting the Medumo patient instruction product.
       highlights:
         - Guided team through updating our legacy systems to scale with increased number of patients
         - Built strong working relationships with new hires continuing to leverage my mentoring skills but with more of a product and vision focus
@@ -81,20 +99,17 @@ employment:
         - SQL Server
         - Azure DevOps
         - Terraform
-    - 
+    -
       employer: Medumo
       url: https://www.medumo.com/
       position: Senior Software Engineer
       start: 2018-03
       end: 2019-12
-      summary: Medumo was a health tech company focused on helped healthcare organizations send instructions to patients using SMS, email, snail mail, etc. Acquired by Philips in 2019.
+      summary: Health tech startup that helped hospitals send patients care instructions by SMS, email, and mail. Acquired by Philips in 2019.
       highlights:
-        - Drove microservice development across the team through patterns and technology from message bus for communication to Terraform modules for reusable infrastructure creation
-        - Filled gaps in process from branching strategies (e.g. gitflow) to documentation (e.g. repo readme's, plantUML) to improved CI/CD definitions (e.g. pipeline yaml over UI)
-        - Refactored the core patient enrollment script-like procedure into a reusable, testable library
-        - Built HIPAA-compliant integrations with the medical record systems including Epic with multiple hospitals receiving millions of messages from these hospitals
-        - Guided a newer engineer through designing and executing a message broadcast tool that became one of our most popular tools with clients
-        - Mentored an amazing group of newer engineers using paired programming, code reviews, and a weekly Design Day meeting
+        - Built HIPAA-compliant integrations with hospital record systems, including Epic, handling millions of messages from multiple hospitals
+        - "Led the team's move to microservices: message-bus patterns, reusable Terraform modules, and CI/CD pipelines defined as code"
+        - Mentored newer engineers through pairing, code reviews, and a weekly Design Day; guided one through building a broadcast tool that became a client favorite
       keywords:
         - .NET Core
         - C#
@@ -103,15 +118,15 @@ employment:
         - SQL Server
         - Azure DevOps
         - Terraform
-    - 
+    -
       employer: HomeLight
       url: https://www.homelight.com/
       position: Software Engineer
       start: 2018-01
       end: 2018-03
       summary: HomeLight automates connecting real estate agents with home sellers. This was a transitional period for me leaving my first acquisition experience. I arrived right after a Series A round and realized that I wanted another early-stage startup experience to practice all I had learned.
-    - 
-      employer: RetailMeNot
+    -
+      employer: RetailMeNot, Inc.
       url: https://retailmenot.com
       position: Engineering Manager
       start: 2016-08
@@ -139,8 +154,8 @@ employment:
         - Bitrise
         - React Native
         - Phoenix/Elixir
-    - 
-      employer: RetailMeNot
+    -
+      employer: RetailMeNot, Inc.
       url: https://retailmenot.com
       position: Senior Software Engineer
       start: 2016-04
@@ -162,10 +177,10 @@ employment:
         - Microservices
         - Sentry
         - Papertrail
-    - 
+    -
       employer: Giftcard Zen
       url: https://giftcardzen.com
-      position: Lead Engineer
+      position: Lead Developer
       start: 2014-04
       end: 2016-04
       summary: Giftcard Zen was a pre-owned gift card marketplace. Acquired by RetailMeNot in 2016.
@@ -186,13 +201,13 @@ employment:
         - Microservices
         - Sentry
         - Papertrail
-    - 
+    -
       employer: InfernoRed Technology
       url: http://www.infernored.com/
-      position: Software Engineer
-      start: 2014-04
-      end: 2013-06
-      summary: InfernoRed is a software consultant shop. I helped a new consulting firm build and improve software for their clients. I played a key role in answering client performance questions about their SaaS web application as well as contributed to web and mobile applications.
+      position: Software Developer
+      start: 2013-06
+      end: 2014-04
+      summary: InfernoRed is a software consulting shop. I helped a new consulting firm build and improve software for their clients. I played a key role in answering client performance questions about their SaaS web application as well as contributed to web and mobile applications.
       highlights:
         - Built a heavily customized load test suite for testing a multi-tenant app
         - Presented performance analysis and recommendations to the client VP and leads
@@ -202,7 +217,7 @@ employment:
         - ASP.NET MVC
         - Entity Framework Code-First
         - Visual Studio
-    - 
+    -
       employer: National Council of Architectural Registration Boards (NCARB)
       position: Software Engineer
       start: 2011-02
@@ -211,9 +226,9 @@ employment:
       url: https://www.ncarb.org/
       highlights:
         - Built JavaScript and CSS infrastructure for the new flagship web application
-        - Facilitated collaboration between between third-party UX team and the development team
+        - Facilitated collaboration between third-party UX team and the development team
         - Promoted the use of Backbone.js to the development team
-        - Recommend a better solution for the new evaluation report which resulted in a different feature roadmap
+        - Recommended a better solution for the new evaluation report which resulted in a different feature roadmap
         - Completed classes taught by Eric Evans (Domain-Driven Design author) and Udi Dahan (NServiceBus author), respectively
         - Obtained my Scrum certification
       keywords:
@@ -225,30 +240,30 @@ employment:
         - Service Oriented Architecture
         - Distributed transactions
         - Publish / subscribe
-  summary: 10+ years software development experience.
-info: 
+  summary: 15+ years software development experience.
+info:
   brief: "Gabe has over a decade of software engineering experience in enterprises, startups, leading teams, shipping code, acquisitions, and co-founding. This journey has shaped him to lead teams to build human-first products. Gabe has a strong focus on mentorship, product delivery, and architecture."
   characterClass: Programmer
-  label: Leader & Software Engineer
-location: 
+  label: Staff Software Engineer & Tech Lead
+location:
   city: Phoenix
   country: US
   region: AZ
-meta: 
+meta:
   format: FRESH@0.6.0
-  version: 0.4.0
+  version: 0.5.0
 name: Gabriel Chaney
-social: 
-  - 
+social:
+  -
     label: github
     network: GitHub
     url: https://github.com/gabrieljoelc
     user: gabrieljoelc
-  - 
+  -
     label: linkedin
     network: LinkedIn
     url: https://www.linkedin.com/in/gabrielchaney
-  - 
+  -
     label: twitter
     network: Twitter
     url: https://twitter.com/gabrieljoelc
