@@ -1,0 +1,10 @@
+# Public-safe career profile in JSON Resume format: https://jsonresume.org/schema
+# Everything in this file is public. See CLAUDE.md for the confidentiality rules.
+# Stub: roadmap step 2 migrates src/default.yml into this file.
+basics: {}
+work: []
+volunteer: []
+education: []
+certificates: []
+projects: []
+skills: []
